@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comuns',
@@ -64,5 +65,15 @@ export class NoComunsComponent {
       flight: false
     }
   ]
+
+  // ** async **
+  myObservable = interval( 1000 );
+  promiseValor = new Promise(( resolve, reject ) => {
+    
+    setTimeout( () => {
+      resolve('Tenemos data de la promesa')
+    }, 3500)
+
+  })
 
 }
