@@ -43,6 +43,12 @@
                 <li>today | date: 'MMMM'</li>
                 <li>today | date: 'MMMM, dd, yy'</li>
             </ul>
+            <hr>
+            <ul>
+                <li>today | date: 'long': 'GMT+3'</li>
+                <li>today | date: 'long': 'GMT+1'</li>
+                <li>today | date: 'long': '': 'fr'</li>
+            </ul>
         </p-card>
     </div>
     <div class="col md:col-6">
@@ -54,6 +60,12 @@
                 <li>{{ today | date: 'long' }}</li>
                 <li>{{ today | date: 'MMMM' }}</li>
                 <li>{{ today | date: 'MMMM, dd, yy' }}</li>
+            </ul>
+            <hr>
+            <ul>
+                <li>{{ today | date: 'long': 'GMT+3' }}</li>
+                <li>{{ today | date: 'long': 'GMT+1' }}</li>
+                <li>{{ today | date: 'long': '': 'fr' }}</li>
             </ul>
         </p-card>
     </div>
