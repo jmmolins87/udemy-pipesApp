@@ -21,7 +21,7 @@ export class NoComunsComponent {
 
   // ** i18nPlural **
   public disabled: boolean = false;
-  public clients: string[] = ['Juanma', 'Carolina', 'Luís', 'Papá', 'Mamá'];
+  public clients: string[] = ['Juanma', ' ' + 'Carolina', ' ' + 'Luís', ' ' + 'Mamen'];
   public clientsMap = {
     '=0': 'no tenemos ningún cliente esperando',
     '=1': 'tenemos # cliente esperando',
@@ -34,5 +34,35 @@ export class NoComunsComponent {
       this.disabled = true;
     }
   }
+  
+  // ** slice **
+  public completeName: string = 'Juan María Molins Cortés';
+
+  // ** keyValue **
+  public people = {
+    name: 'Juanma',
+    years: 35,
+    location: 'Madrid'
+  }
+
+  // ** json **
+  public heros = [
+    {
+      name: 'Superman',
+      flight: true
+    },
+    {
+      name: 'Robin',
+      flight: false
+    },
+    {
+      name: 'Aquaman',
+      flight: false
+    },
+    {
+      name: 'Batman',
+      flight: false
+    }
+  ]
 
 }
