@@ -2,10 +2,18 @@
 
 
 html, body {
-    background: var( --surface-b );
-    font-family: var( --font-family );
+    background: var( --surface-b ) !important;
+    font-family: var( --font-family ) !important;
 }
 
 .text-layout {
-    color: var( --text-color );
+    color: var( --text-color ) !important;
 }
+
+.d-block {
+    display: block !important;
+}
+
+/* .disabled {
+    display: none !important;
+} */
