@@ -1,1 +1,60 @@
-<p>basics works!</p>
+<div class="text-layout">
+    <h1>Pipes básicos</h1>
+    <p>Pipes incluidos en Angular - Usualmente en el CommonModule</p>
+</div>
+<section class="flex flex-column md:flex-row mt-2">
+    <div class="col md:col-4">
+        <p-card 
+            header="uppercase"
+            [subheader]="nameLower">
+            {{ nameLower | uppercase }}
+        </p-card>
+    </div>
+    <div class="col md:col-4">
+        <p-card 
+            header="lowercase"
+            [subheader]="nameUpper">
+            {{ nameUpper | lowercase }}
+        </p-card>
+    </div>
+    <div class="col md:col-4">
+        <p-card 
+            header="titlecase"
+            [subheader]="completeName">
+            {{ completeName | titlecase }}
+        </p-card>
+    </div>
+</section>
+
+<!-- *****  -->
+
+<div class="text-layout">
+    <h2>Date | Fecha | Pipe</h2>
+    <p>Pipes para mostrar las fechs</p>
+</div>
+<section class="flex flex-column md:flex-row mt-2">
+    <div class="col md:col-6">
+        <p-card>
+            <ul>
+                <li>today</li>
+                <li>today | date</li>
+                <li>today | date: 'short'</li>
+                <li>today | date: 'long'</li>
+                <li>today | date: 'MMMM'</li>
+                <li>today | date: 'MMMM, dd, yy'</li>
+            </ul>
+        </p-card>
+    </div>
+    <div class="col md:col-6">
+        <p-card>
+            <ul>
+                <li>{{ today }}</li>
+                <li>{{ today | date }}</li>
+                <li>{{ today | date: 'short' }}</li>
+                <li>{{ today | date: 'long' }}</li>
+                <li>{{ today | date: 'MMMM' }}</li>
+                <li>{{ today | date: 'MMMM, dd, yy' }}</li>
+            </ul>
+        </p-card>
+    </div>
+</section>
