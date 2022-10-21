@@ -85,7 +85,9 @@
         <p-fieldset 
             legend="async Pipe" 
             [toggleable]="true">
+            <pre *ngIf="!( myObservable | async )">Resolviendo observable</pre>
             <pre> {{ myObservable | async }}</pre>
+            <pre *ngIf="!( promiseValor | async )">Resolviendo promesa</pre>
             <pre> {{ promiseValor | async }}</pre>
         </p-fieldset>
     </div>
