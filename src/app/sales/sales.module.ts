@@ -10,6 +10,9 @@ import { NoComunsComponent } from './pages/no-comuns/no-comuns.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { OrganizeComponent } from './pages/organize/organize.component';
 
+// ** Pipes **
+import { MayusclasPipe } from './pipes/mayusculas.pipe';
+
 
 
 @NgModule({
@@ -17,7 +20,8 @@ import { OrganizeComponent } from './pages/organize/organize.component';
     NumbersComponent,
     NoComunsComponent,
     BasicsComponent,
-    OrganizeComponent
+    OrganizeComponent,
+    MayusclasPipe
   ],
   imports: [
     CommonModule,
