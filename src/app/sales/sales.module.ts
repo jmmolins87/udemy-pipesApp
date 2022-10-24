@@ -12,6 +12,8 @@ import { OrganizeComponent } from './pages/organize/organize.component';
 
 // ** Pipes **
 import { MayusclasPipe } from './pipes/mayusculas.pipe';
+import { FlightPipe } from './pipes/vuela.pipe';
+import { OrdenarPipe } from './pipes/ordenar.pipe';
 
 
 
@@ -21,7 +23,9 @@ import { MayusclasPipe } from './pipes/mayusculas.pipe';
     NoComunsComponent,
     BasicsComponent,
     OrganizeComponent,
-    MayusclasPipe
+    MayusclasPipe,
+    FlightPipe,
+    OrdenarPipe
   ],
   imports: [
     CommonModule,

@@ -8,6 +8,7 @@ import { Color, Hero } from '../../interfaces/sales.interface';
 export class OrganizeComponent {
 
   public type: boolean = false;
+  public sortBy: string = '';
   public heros: Hero[] = [
     {
       name: 'Superman',
@@ -38,6 +39,10 @@ export class OrganizeComponent {
 
   changeType() {
     this.type = !this.type;
+  }
+
+  changeSort( valor: string ) {
+    this.sortBy = valor;
   }
 
 }
